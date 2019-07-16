@@ -17,9 +17,18 @@
 #   return arrA
 
 def merge( arrA, arrB ):
-    # elements = len( arrA ) + len( arrB )
-    merged_arr = arrA + arrB
-    # TO-DO    
+    merged_arr = []
+    while arrA and arrB:
+        if arrA[0] > arrB[0]:
+            merged_arr.append(arrB.pop(0))            
+        else:
+            merged_arr.append(arrA.pop(0))          
+    while arrA:
+        merged_arr.append(arrA.pop(0))
+
+    while arrB:
+        merged_arr.append(arrB.pop(0))
+
     return merged_arr
 
 
