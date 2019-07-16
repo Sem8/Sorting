@@ -1,9 +1,25 @@
 # TO-DO: complete the helpe function below to merge 2 sorted arrays
+# def merge( arrA, arrB ):
+#     merged_arr = arrA + arrB   
+#     return merged_arr
+
+# def merge( arrA, arrB ):
+#   for i in arrB:
+#     arrA.append(i)
+#   return arrA
+
+# def merge( arrA, arrB ):
+#   merged_arr = [*arrA, *arrB]
+#   return merged_arr
+  
+# def merge( arrA, arrB ):
+#   arrA.extend(arrB)
+#   return arrA
+
 def merge( arrA, arrB ):
-    elements = len( arrA ) + len( arrB )
-    merged_arr = [0] * elements
-    # TO-DO
-    
+    # elements = len( arrA ) + len( arrB )
+    merged_arr = arrA + arrB
+    # TO-DO    
     return merged_arr
 
 
